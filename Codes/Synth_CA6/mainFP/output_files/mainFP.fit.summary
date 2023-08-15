@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun 27 17:29:53 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : mainFP
+Top-level Entity Name : mainFP
+Family : Cyclone IV E
+Device : EP4CE55F29C6
+Timing Models : Final
+Total logic elements : 204 / 55,856 ( < 1 % )
+    Total combinational functions : 155 / 55,856 ( < 1 % )
+    Dedicated logic registers : 150 / 55,856 ( < 1 % )
+Total registers : 150
+Total pins : 100 / 375 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,396,160 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 308 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

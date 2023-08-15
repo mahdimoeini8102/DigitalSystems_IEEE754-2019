@@ -1,0 +1,518 @@
+Analysis & Synthesis report for complete
+Sun Jun 27 19:05:09 2021
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |complete|out_wrapper_TOP:out_wrapper|out_wrapperCU:cu|pstate
+  9. State Machine - |complete|mainFP_TOP:mainFP|mainFPCU:cu|pstate
+ 10. State Machine - |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu|pstate
+ 11. State Machine - |complete|in_wrapper_TOP:in_wrapper|in_wrapperCU:cu|pstate
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for User Entity Instance: in_wrapper_TOP:in_wrapper|in_wrapperCU:cu
+ 17. Parameter Settings for User Entity Instance: mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu
+ 18. Parameter Settings for User Entity Instance: mainFP_TOP:mainFP|mainFPCU:cu
+ 19. Parameter Settings for User Entity Instance: out_wrapper_TOP:out_wrapper|out_wrapperCU:cu
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Jun 27 19:05:09 2021       ;
+; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                      ; complete                                    ;
+; Top-level Entity Name              ; complete                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 273                                         ;
+;     Total combinational functions  ; 151                                         ;
+;     Dedicated logic registers      ; 219                                         ;
+; Total registers                    ; 219                                         ;
+; Total pins                         ; 70                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE30F23I7       ;                    ;
+; Top-level entity name                                            ; complete           ; complete           ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
+; complete.v                       ; yes             ; User Verilog HDL File  ; C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 273       ;
+;                                             ;           ;
+; Total combinational functions               ; 151       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 5         ;
+;     -- 3 input functions                    ; 107       ;
+;     -- <=2 input functions                  ; 39        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 123       ;
+;     -- arithmetic mode                      ; 28        ;
+;                                             ;           ;
+; Total registers                             ; 219       ;
+;     -- Dedicated logic registers            ; 219       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 70        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 219       ;
+; Total fan-out                               ; 1375      ;
+; Average fan-out                             ; 2.70      ;
++---------------------------------------------+-----------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                               ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name     ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+-----------------+--------------+
+; |complete                        ; 151 (0)             ; 219 (0)                   ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |complete                                                          ; complete        ; work         ;
+;    |in_wrapper_TOP:in_wrapper|   ; 7 (0)               ; 54 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|in_wrapper_TOP:in_wrapper                                ; in_wrapper_TOP  ; work         ;
+;       |in_wrapperCU:cu|          ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|in_wrapper_TOP:in_wrapper|in_wrapperCU:cu                ; in_wrapperCU    ; work         ;
+;       |in_wrapperDP:dp|          ; 0 (0)               ; 48 (48)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|in_wrapper_TOP:in_wrapper|in_wrapperDP:dp                ; in_wrapperDP    ; work         ;
+;    |mainFP_TOP:mainFP|           ; 140 (0)             ; 134 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|mainFP_TOP:mainFP                                        ; mainFP_TOP      ; work         ;
+;       |mainFPCU:cu|              ; 5 (5)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|mainFP_TOP:mainFP|mainFPCU:cu                            ; mainFPCU        ; work         ;
+;       |mainFPDP:dp|              ; 135 (26)            ; 129 (48)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|mainFP_TOP:mainFP|mainFPDP:dp                            ; mainFPDP        ; work         ;
+;          |MULT_TOP:seqmult|      ; 109 (0)             ; 81 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult           ; MULT_TOP        ; work         ;
+;             |MULTCU:cu|          ; 10 (10)             ; 9 (9)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu ; MULTCU          ; work         ;
+;             |MULTDP:dp|          ; 99 (99)             ; 72 (72)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTDP:dp ; MULTDP          ; work         ;
+;    |out_wrapper_TOP:out_wrapper| ; 4 (0)               ; 31 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|out_wrapper_TOP:out_wrapper                              ; out_wrapper_TOP ; work         ;
+;       |out_wrapperCU:cu|         ; 4 (4)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|out_wrapper_TOP:out_wrapper|out_wrapperCU:cu             ; out_wrapperCU   ; work         ;
+;       |out_wrapperDP:dp|         ; 0 (0)               ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |complete|out_wrapper_TOP:out_wrapper|out_wrapperDP:dp             ; out_wrapperDP   ; work         ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------+
+; State Machine - |complete|out_wrapper_TOP:out_wrapper|out_wrapperCU:cu|pstate ;
++---------------+---------------+---------------+-------------+-----------------+
+; Name          ; pstate.finish ; pstate.accept ; pstate.load ; pstate.Idle     ;
++---------------+---------------+---------------+-------------+-----------------+
+; pstate.Idle   ; 0             ; 0             ; 0           ; 0               ;
+; pstate.load   ; 0             ; 0             ; 1           ; 1               ;
+; pstate.accept ; 0             ; 1             ; 0           ; 1               ;
+; pstate.finish ; 1             ; 0             ; 0           ; 1               ;
++---------------+---------------+---------------+-------------+-----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------+
+; State Machine - |complete|mainFP_TOP:mainFP|mainFPCU:cu|pstate              ;
++-------------+----------+----------+-------------+-------------+-------------+
+; Name        ; pstate.B ; pstate.A ; pstate.init ; pstate.Idle ; pstate.calc ;
++-------------+----------+----------+-------------+-------------+-------------+
+; pstate.Idle ; 0        ; 0        ; 0           ; 0           ; 0           ;
+; pstate.init ; 0        ; 0        ; 1           ; 1           ; 0           ;
+; pstate.A    ; 0        ; 1        ; 0           ; 1           ; 0           ;
+; pstate.B    ; 1        ; 0        ; 0           ; 1           ; 0           ;
+; pstate.calc ; 0        ; 0        ; 0           ; 1           ; 1           ;
++-------------+----------+----------+-------------+-------------+-------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------+
+; State Machine - |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu|pstate ;
++--------------+--------------+-------------+-------------+---------------------------------+
+; Name         ; pstate.shift ; pstate.load ; pstate.init ; pstate.Idle                     ;
++--------------+--------------+-------------+-------------+---------------------------------+
+; pstate.Idle  ; 0            ; 0           ; 0           ; 0                               ;
+; pstate.init  ; 0            ; 0           ; 1           ; 1                               ;
+; pstate.load  ; 0            ; 1           ; 0           ; 1                               ;
+; pstate.shift ; 1            ; 0           ; 0           ; 1                               ;
++--------------+--------------+-------------+-------------+---------------------------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------------------------------+
+; State Machine - |complete|in_wrapper_TOP:in_wrapper|in_wrapperCU:cu|pstate                          ;
++----------------+----------------+----------+--------------+----------------+----------+-------------+
+; Name           ; pstate.accepty ; pstate.y ; pstate.Idle2 ; pstate.acceptx ; pstate.x ; pstate.Idle ;
++----------------+----------------+----------+--------------+----------------+----------+-------------+
+; pstate.Idle    ; 0              ; 0        ; 0            ; 0              ; 0        ; 0           ;
+; pstate.x       ; 0              ; 0        ; 0            ; 0              ; 1        ; 1           ;
+; pstate.acceptx ; 0              ; 0        ; 0            ; 1              ; 0        ; 1           ;
+; pstate.Idle2   ; 0              ; 0        ; 1            ; 0              ; 0        ; 1           ;
+; pstate.y       ; 0              ; 1        ; 0            ; 0              ; 0        ; 1           ;
+; pstate.accepty ; 1              ; 0        ; 0            ; 0              ; 0        ; 1           ;
++----------------+----------------+----------+--------------+----------------+----------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                         ;
++-------------------------------------------------------------------+----------------------------------------+
+; Register name                                                     ; Reason for Removal                     ;
++-------------------------------------------------------------------+----------------------------------------+
+; mainFP_TOP:mainFP|mainFPDP:dp|Breg[24..31]                        ; Stuck at GND due to stuck port data_in ;
+; mainFP_TOP:mainFP|mainFPDP:dp|Areg[24..31]                        ; Stuck at GND due to stuck port data_in ;
+; out_wrapper_TOP:out_wrapper|out_wrapperDP:dp|outreg[26..29,31]    ; Stuck at GND due to stuck port data_in ;
+; out_wrapper_TOP:out_wrapper|out_wrapperCU:cu|pstate~4             ; Lost fanout                            ;
+; out_wrapper_TOP:out_wrapper|out_wrapperCU:cu|pstate~5             ; Lost fanout                            ;
+; mainFP_TOP:mainFP|mainFPCU:cu|pstate~4                            ; Lost fanout                            ;
+; mainFP_TOP:mainFP|mainFPCU:cu|pstate~5                            ; Lost fanout                            ;
+; mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu|pstate~4 ; Lost fanout                            ;
+; mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu|pstate~5 ; Lost fanout                            ;
+; in_wrapper_TOP:in_wrapper|in_wrapperCU:cu|pstate~4                ; Lost fanout                            ;
+; in_wrapper_TOP:in_wrapper|in_wrapperCU:cu|pstate~5                ; Lost fanout                            ;
+; in_wrapper_TOP:in_wrapper|in_wrapperCU:cu|pstate~6                ; Lost fanout                            ;
+; Total Number of Removed Registers = 30                            ;                                        ;
++-------------------------------------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                   ;
++----------------------------------------+---------------------------+----------------------------------------------------------+
+; Register name                          ; Reason for Removal        ; Registers Removed due to This Register                   ;
++----------------------------------------+---------------------------+----------------------------------------------------------+
+; mainFP_TOP:mainFP|mainFPDP:dp|Breg[30] ; Stuck at GND              ; out_wrapper_TOP:out_wrapper|out_wrapperDP:dp|outreg[29], ;
+;                                        ; due to stuck port data_in ; out_wrapper_TOP:out_wrapper|out_wrapperDP:dp|outreg[28], ;
+;                                        ;                           ; out_wrapper_TOP:out_wrapper|out_wrapperDP:dp|outreg[27], ;
+;                                        ;                           ; out_wrapper_TOP:out_wrapper|out_wrapperDP:dp|outreg[26]  ;
+; mainFP_TOP:mainFP|mainFPDP:dp|Breg[31] ; Stuck at GND              ; out_wrapper_TOP:out_wrapper|out_wrapperDP:dp|outreg[31]  ;
+;                                        ; due to stuck port data_in ;                                                          ;
++----------------------------------------+---------------------------+----------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 219   ;
+; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 219   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 199   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTDP:dp|Preg[19] ;
+; 3:1                ; 23 bits   ; 46 LEs        ; 23 LEs               ; 23 LEs                 ; Yes        ; |complete|mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTDP:dp|Areg[2]  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: in_wrapper_TOP:in_wrapper|in_wrapperCU:cu ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; Idle           ; 000   ; Unsigned Binary                                               ;
+; x              ; 001   ; Unsigned Binary                                               ;
+; acceptx        ; 010   ; Unsigned Binary                                               ;
+; Idle2          ; 011   ; Unsigned Binary                                               ;
+; y              ; 100   ; Unsigned Binary                                               ;
+; accepty        ; 101   ; Unsigned Binary                                               ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; Idle           ; 00    ; Unsigned Binary                                                              ;
+; init           ; 01    ; Unsigned Binary                                                              ;
+; load           ; 10    ; Unsigned Binary                                                              ;
+; shift          ; 11    ; Unsigned Binary                                                              ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mainFP_TOP:mainFP|mainFPCU:cu ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; Idle           ; 000   ; Unsigned Binary                                   ;
+; init           ; 001   ; Unsigned Binary                                   ;
+; A              ; 010   ; Unsigned Binary                                   ;
+; B              ; 011   ; Unsigned Binary                                   ;
+; calc           ; 100   ; Unsigned Binary                                   ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: out_wrapper_TOP:out_wrapper|out_wrapperCU:cu ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; Idle           ; 00    ; Unsigned Binary                                                  ;
+; load           ; 01    ; Unsigned Binary                                                  ;
+; accept         ; 10    ; Unsigned Binary                                                  ;
+; finish         ; 11    ; Unsigned Binary                                                  ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 70                          ;
+; cycloneiii_ff         ; 219                         ;
+;     CLR               ; 19                          ;
+;     CLR SLD           ; 1                           ;
+;     ENA CLR           ; 194                         ;
+;     ENA CLR SCLR      ; 5                           ;
+; cycloneiii_lcell_comb ; 152                         ;
+;     arith             ; 28                          ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 24                          ;
+;     normal            ; 124                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 33                          ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 5                           ;
+;                       ;                             ;
+; Max LUT depth         ; 5.40                        ;
+; Average LUT depth     ; 1.87                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sun Jun 27 19:04:51 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off complete -c complete
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 13 design units, including 13 entities, in source file complete.v
+    Info (12023): Found entity 1: MULTDP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 3
+    Info (12023): Found entity 2: MULTCU File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 49
+    Info (12023): Found entity 3: MULT_TOP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 93
+    Info (12023): Found entity 4: mainFPDP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 103
+    Info (12023): Found entity 5: mainFPCU File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 136
+    Info (12023): Found entity 6: mainFP_TOP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 167
+    Info (12023): Found entity 7: in_wrapperDP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 176
+    Info (12023): Found entity 8: in_wrapperCU File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 202
+    Info (12023): Found entity 9: in_wrapper_TOP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 236
+    Info (12023): Found entity 10: out_wrapperDP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 245
+    Info (12023): Found entity 11: out_wrapperCU File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 261
+    Info (12023): Found entity 12: out_wrapper_TOP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 291
+    Info (12023): Found entity 13: complete File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+Info (12127): Elaborating entity "complete" for the top level hierarchy
+Info (12128): Elaborating entity "in_wrapper_TOP" for hierarchy "in_wrapper_TOP:in_wrapper" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 303
+Info (12128): Elaborating entity "in_wrapperDP" for hierarchy "in_wrapper_TOP:in_wrapper|in_wrapperDP:dp" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 240
+Warning (10230): Verilog HDL assignment warning at complete.v(186): truncated value with size 32 to match size of target (24) File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 186
+Warning (10230): Verilog HDL assignment warning at complete.v(194): truncated value with size 32 to match size of target (24) File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 194
+Info (12128): Elaborating entity "in_wrapperCU" for hierarchy "in_wrapper_TOP:in_wrapper|in_wrapperCU:cu" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 241
+Info (12128): Elaborating entity "mainFP_TOP" for hierarchy "mainFP_TOP:mainFP" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 304
+Info (12128): Elaborating entity "mainFPDP" for hierarchy "mainFP_TOP:mainFP|mainFPDP:dp" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 171
+Info (12128): Elaborating entity "MULT_TOP" for hierarchy "mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 128
+Info (12128): Elaborating entity "MULTDP" for hierarchy "mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTDP:dp" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 98
+Warning (10230): Verilog HDL assignment warning at complete.v(42): truncated value with size 32 to match size of target (24) File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 42
+Info (12128): Elaborating entity "MULTCU" for hierarchy "mainFP_TOP:mainFP|mainFPDP:dp|MULT_TOP:seqmult|MULTCU:cu" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 99
+Warning (10230): Verilog HDL assignment warning at complete.v(87): truncated value with size 32 to match size of target (5) File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 87
+Info (12128): Elaborating entity "mainFPCU" for hierarchy "mainFP_TOP:mainFP|mainFPCU:cu" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 172
+Warning (10235): Verilog HDL Always Construct warning at complete.v(155): variable "doneMul" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 155
+Info (12128): Elaborating entity "out_wrapper_TOP" for hierarchy "out_wrapper_TOP:out_wrapper" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 305
+Info (12128): Elaborating entity "out_wrapperDP" for hierarchy "out_wrapper_TOP:out_wrapper|out_wrapperDP:dp" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 295
+Info (12128): Elaborating entity "out_wrapperCU" for hierarchy "out_wrapper_TOP:out_wrapper|out_wrapperCU:cu" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 296
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "outBus[26]" is stuck at GND File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (13410): Pin "outBus[27]" is stuck at GND File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (13410): Pin "outBus[28]" is stuck at GND File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (13410): Pin "outBus[29]" is stuck at GND File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (13410): Pin "outBus[31]" is stuck at GND File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 9 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "inBus[24]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[25]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[26]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[27]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[28]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[29]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[30]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+    Warning (15610): No output dependent on input pin "inBus[31]" File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Synth_CA6/complete/complete.v Line: 300
+Info (21057): Implemented 343 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 34 output pins
+    Info (21061): Implemented 273 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Sun Jun 27 19:05:09 2021
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:43
+
+

@@ -1,0 +1,19 @@
+{C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.sv} {1 {vlog -work work -sv -stats=none {C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.sv}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module out_wrapperDP
+-- Compiling module out_wrapperCU
+-- Compiling module out_wrapper_TOP
+-- Compiling module out_wrapper_TB
+
+Top level modules:
+	out_wrapper_TB
+
+} {} {}} {C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.vo} {1 {vlog -work work -stats=none {C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module out_wrapper
+-- Compiling module hard_block
+
+Top level modules:
+	out_wrapper
+
+} {} {}}

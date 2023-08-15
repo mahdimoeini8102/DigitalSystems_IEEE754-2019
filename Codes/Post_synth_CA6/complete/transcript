@@ -1,0 +1,46 @@
+# Compile of complete.sv was successful.
+# Compile of complete.vo was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of complete.sv was successful.
+vsim work.complete_TB -L altera_ver -L cycloneiv_ver -L cycloneive_ver -sdftyp {/synth=C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete_v.sdo}
+# vsim work.complete_TB -L altera_ver -L cycloneiv_ver -L cycloneive_ver -sdftyp "/synth=C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete_v.sdo" 
+# Start time: 19:08:37 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# Loading work.complete
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete_v.sdo
+# Loading instances from complete_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete_v.sdo
+# Loading timing data from complete_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete.sv
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete.sv(330)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete.sv line 330
+run

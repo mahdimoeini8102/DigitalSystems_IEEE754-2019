@@ -1,0 +1,430 @@
+# Compile of complete.sv failed with 2 errors.
+# Compile of seqmult.sv was successful.
+# Compile of mainFP.sv was successful.
+# Compile of in_wrapper.sv was successful.
+# Compile of out_wrapper.sv was successful.
+# Compile of complete.sv failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of complete.sv failed with 1 errors.
+# Compile of complete.sv failed with 2 errors.
+# Compile of complete.sv failed with 1 errors.
+# Compile of seqmult.sv was successful.
+# Compile of mainFP.sv was successful.
+# Compile of in_wrapper.sv was successful.
+# Compile of out_wrapper.sv was successful.
+# Compile of complete.sv failed with 2 errors.
+# 5 compiles, 1 failed with 2 errors.
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# vsim work.complete_TB 
+# Start time: 18:13:02 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'in_wrapper_TOP'.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 304
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'mainFP_TOP'.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'out_wrapper_TOP'.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+# Error loading design
+# End time: 18:13:03 on Jun 27,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 9
+vsim work.complete_TB -L altera_ver
+# vsim work.complete_TB -L altera_ver 
+# Start time: 18:13:41 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'in_wrapper_TOP'.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 304
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'mainFP_TOP'.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Error: (vsim-3037) Missing instance name in instantiation of 'out_wrapper_TOP'.
+#    Time: 0 ps  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+# Error loading design
+# End time: 18:13:41 on Jun 27,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 1
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# vsim work.complete_TB 
+# Start time: 18:14:09 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'my_ic'.  Expected 8, found 7.
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 319
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'inBus'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(301).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 319
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'outBus'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(301).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 319
+# ** Warning: (vsim-3722) C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(319): [TFMPC] - Missing connection for port 'resultReady'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(292).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(333)
+#    Time: 632 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 333
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:15:34 on Jun 27,2021, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 9
+# vsim work.complete_TB 
+# Start time: 18:15:34 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(292).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(333)
+#    Time: 632 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 333
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:23:41 on Jun 27,2021, Elapsed time: 0:08:07
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:23:41 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(292).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(333)
+#    Time: 18200 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 333
+run
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:24:33 on Jun 27,2021, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:24:33 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(292).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+add wave -position insertpoint sim:/complete_TB/*
+add wave -position insertpoint sim:/complete_TB/my_ic/mainFP/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(333)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 333
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:28:09 on Jun 27,2021, Elapsed time: 0:03:36
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:28:09 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 305
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 306
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(321)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 321
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:30:08 on Jun 27,2021, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:30:08 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 301
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 302
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:31:34 on Jun 27,2021, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:31:34 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 301
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 302
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+vsim work.complete_TB
+# End time: 18:35:21 on Jun 27,2021, Elapsed time: 0:03:47
+# Errors: 0, Warnings: 3
+# vsim work.complete_TB 
+# Start time: 18:35:21 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 301
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 302
+add wave -position insertpoint sim:/complete_TB/*
+add wave -position insertpoint sim:/complete_TB/my_ic/in_wrapper/*
+add wave -position insertpoint sim:/complete_TB/my_ic/mainFP/*
+add wave -position insertpoint sim:/complete_TB/my_ic/out_wrapper/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+run
+run
+run
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:45:24 on Jun 27,2021, Elapsed time: 0:10:03
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:45:24 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 301
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 302
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+run
+run
+run
+# Compile of complete.sv failed with 5 errors.
+# Compile of complete.sv was successful.
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:48:26 on Jun 27,2021, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 6
+# vsim work.complete_TB 
+# Start time: 18:48:26 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 301
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 302
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:51:32 on Jun 27,2021, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:51:32 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(168).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/mainFP File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 301
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'result'. The port definition is at: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(288).
+#    Time: 0 ns  Iteration: 0  Instance: /complete_TB/my_ic/out_wrapper File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv Line: 302
+add wave -position insertpoint sim:/complete_TB/*
+add wave -position insertpoint sim:/complete_TB/my_ic/in_wrapper/*
+add wave -position insertpoint sim:/complete_TB/my_ic/mainFP/*
+add wave -position insertpoint sim:/complete_TB/my_ic/out_wrapper/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+add wave -position insertpoint  \
+sim:/complete_TB/my_ic/result
+# Compile of complete.sv was successful.
+vsim work.complete_TB
+# End time: 18:54:45 on Jun 27,2021, Elapsed time: 0:03:13
+# Errors: 0, Warnings: 4
+# vsim work.complete_TB 
+# Start time: 18:54:45 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.complete_TB
+# Loading work.complete_TOP
+# Loading work.in_wrapper_TOP
+# Loading work.in_wrapperDP
+# Loading work.in_wrapperCU
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# Loading work.MULT_TOP
+# Loading work.MULTDP
+# Loading work.MULTCU
+# Loading work.mainFPCU
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+add wave -position insertpoint sim:/complete_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv(329)
+#    Time: 1820 ns  Iteration: 0  Instance: /complete_TB
+# Break in Module complete_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv line 329
+run
+# Compile of complete.sv was successful.
+quit -sim
+# End time: 19:06:36 on Jun 27,2021, Elapsed time: 0:11:51
+# Errors: 0, Warnings: 2

@@ -1,0 +1,9 @@
+{C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete.vo} {1 {vlog -work work -stats=none {C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/complete/complete.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module complete
+-- Compiling module hard_block
+
+Top level modules:
+	complete
+
+} {} {}}

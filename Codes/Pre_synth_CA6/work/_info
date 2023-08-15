@@ -1,0 +1,479 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/IDEAL/Desktop/Programm train/ModelSIM/5-post_synth
+vcomplete_TB
+Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 !s110 1624804584
+!i10b 1
+!s100 ghhbjedB29zD[?bMX?a4h3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Id;kE^NBX8e^J5>HY_0KoJ1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+Z4 dC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6
+Z5 w1624804454
+Z6 8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv
+Z7 FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv
+!i122 104
+L0 305 27
+Z8 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z9 !s108 1624804584.000000
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv|
+Z10 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv|
+!i113 1
+Z11 o-work work -sv
+Z12 tCvgOpt 0
+ncomplete_@t@b
+vcomplete_TOP
+R0
+R1
+!i10b 1
+!s100 cXngJoRoUWAK:6=KZPFEY2
+R2
+I0MfdoEZi6KAQ1h176mabU2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 297 7
+R8
+r1
+!s85 0
+31
+R9
+Z13 !s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/complete.sv|
+R10
+!i113 1
+R11
+R12
+ncomplete_@t@o@p
+vin_wrapper_TB
+R0
+Z14 !s110 1624801364
+!i10b 1
+!s100 <K6FN[1zZYh_JSHJ2W8B>2
+R2
+IjFdOzLI8Q=YDzeSEYE7ES2
+R3
+S1
+R4
+w1624776531
+8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/in_wrapper.sv
+FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/in_wrapper.sv
+!i122 87
+L0 72 24
+R8
+r1
+!s85 0
+31
+Z15 !s108 1624801364.000000
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/in_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/in_wrapper.sv|
+!i113 1
+R11
+R12
+nin_wrapper_@t@b
+vin_wrapper_TOP
+R0
+R1
+!i10b 1
+!s100 PK54?9ZAni_l;m6Ghi4<b0
+R2
+I8N:<i_^o@<15Bf8hjZ5<a3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 236 8
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nin_wrapper_@t@o@p
+vin_wrapperCU
+R0
+R1
+!i10b 1
+!s100 Q[GG]feY9d=`h;0TP<[QM3
+R2
+ILIgn^>UGhCKZ7TG?iIR0<2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 202 33
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nin_wrapper@c@u
+vin_wrapperDP
+R0
+R1
+!i10b 1
+!s100 <Z_CN6R9kzVkQ;0BZZ;6^2
+R2
+Id`]mA1C_MMJb=fn=h^XC10
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 176 25
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nin_wrapper@d@p
+vmainFP_TB
+R0
+R14
+!i10b 1
+!s100 FC;3K83Xm9hfL?bYAK]@_0
+R2
+I@Dnm`kWZ^VUAl=eo45WTh1
+R3
+S1
+R4
+w1624764163
+8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/mainFP.sv
+FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/mainFP.sv
+!i122 86
+L0 76 22
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/mainFP.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/mainFP.sv|
+!i113 1
+R11
+R12
+nmain@f@p_@t@b
+vmainFP_TOP
+R0
+R1
+!i10b 1
+!s100 `<ia97knXUSe:YM7YBcTk3
+R2
+IFDiOL62cQFOQn3_HZ`e_G0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 167 8
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nmain@f@p_@t@o@p
+vmainFPCU
+R0
+R1
+!i10b 1
+!s100 n6TE7nDSm:Y6TBNT8Umdh0
+R2
+IlL:2;N[Xb>cCBgA7YPFD`1
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 136 30
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nmain@f@p@c@u
+vmainFPDP
+R0
+R1
+!i10b 1
+!s100 d@3@5i50F>L>A6PG0Tz>T0
+R2
+IT6>4Kmm]:Ema<PUVlVS7K0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 103 32
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nmain@f@p@d@p
+vMULT_TB
+R0
+R14
+!i10b 1
+!s100 ]5Q^DZ]69EKV[ZNh@X4h70
+R2
+I8CSjYoLJbi^F?TK6IoEdm3
+R3
+S1
+R4
+w1624760534
+8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/seqmult.sv
+FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/seqmult.sv
+!i122 85
+L0 103 22
+R8
+r1
+!s85 0
+31
+!s108 1624801363.000000
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/seqmult.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/seqmult.sv|
+!i113 1
+R11
+R12
+n@m@u@l@t_@t@b
+vMULT_TOP
+R0
+R1
+!i10b 1
+!s100 mXWM=<`k^X6`fQc?gAAVE3
+R2
+IUiHDJbTH_G_G]3i>HNS`Q1
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 93 9
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+n@m@u@l@t_@t@o@p
+vMULTCU
+R0
+R1
+!i10b 1
+!s100 QS0TJGKXVkdDh7[UYL<6P1
+R2
+IkP>ZFkdGljHeTMgUL:DVK0
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 49 43
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+n@m@u@l@t@c@u
+vMULTDP
+R0
+R1
+!i10b 1
+!s100 A32NG4780RQI195Af]4l:0
+R2
+IO5?S<4kbU=KOn4cQ[A3`H1
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 3 45
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+n@m@u@l@t@d@p
+vout_wrapper_TB
+R0
+R14
+!i10b 1
+!s100 cD8O6<_Q2lSA?`PFSgiT^3
+R2
+Im2V8^jE7Z=1dJR98>[Ui00
+R3
+S1
+R4
+w1624792609
+8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/out_wrapper.sv
+FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/out_wrapper.sv
+!i122 88
+L0 55 26
+R8
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/out_wrapper.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6/out_wrapper.sv|
+!i113 1
+R11
+R12
+nout_wrapper_@t@b
+vout_wrapper_TOP
+R0
+R1
+!i10b 1
+!s100 IQcTUPEBi^5@n<iBSXOFK1
+R2
+If4ik;U1]GNP<<1D0JBK4G3
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 288 8
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nout_wrapper_@t@o@p
+vout_wrapperCU
+R0
+R1
+!i10b 1
+!s100 e<mZNF4_dHL`[1S[gc@T92
+R2
+IY2b<^<e37czJPkV@7o8oN2
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 258 29
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nout_wrapper@c@u
+vout_wrapperDP
+R0
+R1
+!i10b 1
+!s100 noAJFn>[QSkP70<YdAh3f0
+R2
+IGD]<KSI7i[?VPfkY;TaDP1
+R3
+S1
+R4
+R5
+R6
+R7
+!i122 104
+L0 245 12
+R8
+r1
+!s85 0
+31
+R9
+R13
+R10
+!i113 1
+R11
+R12
+nout_wrapper@d@p

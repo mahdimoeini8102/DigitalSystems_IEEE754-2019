@@ -1,0 +1,27 @@
+vsim -gui work.mainFP_TB -L altera_ver -L cycloneiv_ver -L cycloneive_ver -sdftyp {/synth=C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP_v.sdo}
+# vsim -gui work.mainFP_TB -L altera_ver -L cycloneiv_ver -L cycloneive_ver -sdftyp "/synth=C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP_v.sdo" 
+# Start time: 17:53:12 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.mainFP_TB
+# Loading work.mainFP_TOP
+# Loading work.mainFPDP
+# ** Error: (vsim-3033) Instantiation of 'MULT_TOP' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /mainFP_TB/my_ic/dp File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.sv Line: 28
+#         Searched libraries:
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cycloneiv
+#             C:/intelFPGA/20.1/modelsim_ase/altera/verilog/cycloneive
+#             C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/work
+# Loading work.mainFPCU
+# Loading work.mainFP
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Error loading design
+# End time: 17:53:13 on Jun 27,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1

@@ -1,0 +1,7 @@
+
+State Machine - |seqmult|MULTCU:cu|pstate
+Name pstate.shift pstate.load pstate.init pstate.Idle 
+pstate.Idle 0 0 0 0 
+pstate.init 0 0 1 1 
+pstate.load 0 1 0 1 
+pstate.shift 1 0 0 1 

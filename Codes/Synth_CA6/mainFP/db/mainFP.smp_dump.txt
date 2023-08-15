@@ -1,0 +1,15 @@
+
+State Machine - |mainFP|mainFPCU:cu|pstate
+Name pstate.B pstate.A pstate.init pstate.Idle pstate.calc 
+pstate.Idle 0 0 0 0 0 
+pstate.init 0 0 1 1 0 
+pstate.A 0 1 0 1 0 
+pstate.B 1 0 0 1 0 
+pstate.calc 0 0 0 1 1 
+
+State Machine - |mainFP|mainFPDP:dp|seqmult:seqmult1|MULTCU:cu|pstate
+Name pstate.shift pstate.load pstate.init pstate.Idle 
+pstate.Idle 0 0 0 0 
+pstate.init 0 0 1 1 
+pstate.load 0 1 0 1 
+pstate.shift 1 0 0 1 

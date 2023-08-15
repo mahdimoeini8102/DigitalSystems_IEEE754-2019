@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Jun 27 16:35:47 2021
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : out_wrapper
+Top-level Entity Name : out_wrapper
+Family : Cyclone IV E
+Device : EP4CE6F17C7
+Timing Models : Final
+Total logic elements : 36 / 6,272 ( < 1 % )
+    Total combinational functions : 4 / 6,272 ( < 1 % )
+    Dedicated logic registers : 36 / 6,272 ( < 1 % )
+Total registers : 36
+Total pins : 69 / 180 ( 38 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

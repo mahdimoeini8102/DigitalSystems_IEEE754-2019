@@ -1,0 +1,161 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/IDEAL/Desktop/Programm train/ModelSIM/CA6
+vhard_block
+Z0 !s110 1624796166
+!i10b 1
+!s100 hl:9;N8lQ<k[i_Rd;:`G_0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I^NHhzbo]S:E3fXK`@<HGR2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult
+Z4 w1624793930
+Z5 8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.vo
+Z6 FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.vo
+!i122 3
+L0 4746 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1624796165.000000
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.vo|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vMULT_TB
+Z12 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z13 !s110 1624796165
+!i10b 1
+!s100 o[=:WCXgQY_53BQ0b>6kh3
+R1
+IhR;LEe2kAADg[2A^D7gdU2
+R2
+S1
+R3
+Z14 w1624796157
+Z15 8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.sv
+Z16 FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.sv
+!i122 2
+L0 103 23
+R7
+r1
+!s85 0
+31
+R8
+Z17 !s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.sv|
+Z18 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.sv|
+!i113 1
+Z19 o-work work -sv
+R11
+n@m@u@l@t_@t@b
+vMULT_TOP
+R12
+R13
+!i10b 1
+!s100 mXWM=<`k^X6`fQc?gAAVE3
+R1
+I5cz>bf`fXQg<4jS;FNd?>2
+R2
+S1
+R3
+R14
+R15
+R16
+!i122 2
+L0 93 9
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 1
+R19
+R11
+n@m@u@l@t_@t@o@p
+vMULTCU
+R12
+R13
+!i10b 1
+!s100 QS0TJGKXVkdDh7[UYL<6P1
+R1
+ICdRSXKjJ`1hlmJm9E@bK?3
+R2
+S1
+R3
+R14
+R15
+R16
+!i122 2
+L0 49 43
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 1
+R19
+R11
+n@m@u@l@t@c@u
+vMULTDP
+R12
+R13
+!i10b 1
+!s100 A32NG4780RQI195Af]4l:0
+R1
+ImVhiEo:5]>A`0obcnnaz60
+R2
+S1
+R3
+R14
+R15
+R16
+!i122 2
+L0 3 45
+R7
+r1
+!s85 0
+31
+R8
+R17
+R18
+!i113 1
+R19
+R11
+n@m@u@l@t@d@p
+vseqmult
+R0
+!i10b 1
+!s100 2a9nk7AIZ7]J?7Vf;j2NN1
+R1
+IL1IXQ]>GFSa2L57nG_]:V2
+R2
+R3
+R4
+R5
+R6
+!i122 3
+L0 32 4713
+R7
+r1
+!s85 0
+31
+R8
+Z20 !s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult/seqmult.vo|
+R9
+!i113 1
+R10
+R11

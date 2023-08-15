@@ -1,0 +1,34 @@
+vsim -gui work.out_wrapper_TB -L altera_ver -L cycloneiv_ver -L cycloneive_ver -sdftyp {/synth=C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper_v.sdo}
+# vsim -gui work.out_wrapper_TB -L altera_ver -L cycloneiv_ver -L cycloneive_ver -sdftyp "/synth=C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper_v.sdo" 
+# Start time: 17:46:02 on Jun 27,2021
+# Loading sv_std.std
+# Loading work.out_wrapper_TB
+# Loading work.out_wrapper_TOP
+# Loading work.out_wrapperDP
+# Loading work.out_wrapperCU
+# Loading work.out_wrapper
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper_v.sdo
+# Loading instances from out_wrapper_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper_v.sdo
+# Loading timing data from out_wrapper_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /out_wrapper_TB File: C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.sv
+add wave -position insertpoint sim:/out_wrapper_TB/*
+run
+# ** Note: $stop    : C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.sv(79)
+#    Time: 23900 ns  Iteration: 0  Instance: /out_wrapper_TB
+# Break in Module out_wrapper_TB at C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/out_wrapper/out_wrapper.sv line 79
+quit -sim
+# End time: 17:51:38 on Jun 27,2021, Elapsed time: 0:05:36
+# Errors: 0, Warnings: 1

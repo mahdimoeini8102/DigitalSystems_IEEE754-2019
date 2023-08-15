@@ -1,0 +1,162 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/seqmult
+vhard_block
+Z0 !s110 1624800148
+!i10b 1
+!s100 491A<7RF57bIQS]2e1nQW3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IikXSYf7hKEQb?adjVljaj3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP
+Z4 w1624798810
+Z5 8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.vo
+Z6 FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.vo
+!i122 9
+L0 7926 34
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1624800148.000000
+Z9 !s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.vo|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vmainFP
+R0
+!i10b 1
+!s100 dLm<6iVIn8WacS>N<MR9B2
+R1
+I4ho;bBjdm4DD?zZl51`O_3
+R2
+R3
+R4
+R5
+R6
+!i122 9
+L0 32 7893
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+nmain@f@p
+vmainFP_TB
+Z13 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+R0
+!i10b 1
+!s100 RXOWiZh6P[7F]d_bj5Gc03
+R1
+IJYQnMgWEe4k=:@lU9<;3I1
+R2
+S1
+R3
+Z14 w1624797666
+Z15 8C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.sv
+Z16 FC:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.sv
+!i122 10
+L0 76 23
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.sv|
+Z17 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.sv|
+!i113 1
+Z18 o-work work -sv
+R12
+nmain@f@p_@t@b
+vmainFP_TOP
+R13
+R0
+!i10b 1
+!s100 5l<fJLQ8]]<gkOdiaemT<3
+R1
+ICg@;]?Ybd<GI7mW;4bko[1
+R2
+S1
+R3
+R14
+R15
+R16
+!i122 10
+L0 67 8
+R7
+r1
+!s85 0
+31
+R8
+Z19 !s107 C:/Users/IDEAL/Desktop/Programm train/ModelSIM/Post_synth_CA6/MainFP/mainFP.sv|
+R17
+!i113 1
+R18
+R12
+nmain@f@p_@t@o@p
+vmainFPCU
+R13
+R0
+!i10b 1
+!s100 51_h<i`8eUK9HDUAX3MFj1
+R1
+IJd25ak8@h5Q?ZjbC6jlVo1
+R2
+S1
+R3
+R14
+R15
+R16
+!i122 10
+L0 36 30
+R7
+r1
+!s85 0
+31
+R8
+R19
+R17
+!i113 1
+R18
+R12
+nmain@f@p@c@u
+vmainFPDP
+R13
+R0
+!i10b 1
+!s100 C`:l@VV8fg]zlbi`>mzBJ2
+R1
+I]c>[7M45eZd:Bz[ORAWSE1
+R2
+S1
+R3
+R14
+R15
+R16
+!i122 10
+L0 3 32
+R7
+r1
+!s85 0
+31
+R8
+R19
+R17
+!i113 1
+R18
+R12
+nmain@f@p@d@p
